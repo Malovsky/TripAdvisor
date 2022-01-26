@@ -1,0 +1,229 @@
+body {
+  font-family: "Trip Sans Reg";
+  /* font-family: "Trip Sans Med"; */
+}
+
+h1 {
+  margin-top: 25px;
+  font-size: 54px;
+  font-family: "Trip Sans Med";
+}
+
+h2 {
+  margin-bottom: 16px;
+  font-size: 30px;
+  font-family: "Trip Sans Med";
+}
+
+h3 {
+  margin-bottom: 16px;
+  font-size: 22px;
+  font-family: "Trip Sans Med";
+}
+
+h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-family: "Trip Sans Med";
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  width: 200px;
+  height: 100%;
+  margin: 20px 20px 20px 0px;
+}
+
+/* Nav */
+
+.primary-nav {
+  display: flex;
+  align-items: center;
+  font-family: "Trip Sans Med";
+}
+
+.primary-nav .menu-item {
+  padding: 20px;
+  margin: 0 15px;
+}
+
+.primary-nav button {
+  font-size: 14px;
+  background: black;
+  color: white;
+  padding: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+h1 {
+  margin-top: 25px;
+  font-size: 54px;
+  font-family: "Trip Sans Med";
+}
+
+h1 span {
+  color: #ff5d5d;
+}
+
+.button-connect:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+/* Secondary Nav */
+.secondary-nav {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.secondary-nav p {
+  height: 40px;
+  padding: 11px 16px;
+  border: 1px solid black;
+  border-radius: 10px;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.secondary-nav p:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.images img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.images {
+  margin-top: 35px;
+  display: flex;
+}
+
+.left img {
+  flex: 3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3px;
+}
+.right img {
+  flex: 2;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.right img:first-child {
+  margin-bottom: 3px;
+}
+
+.under-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.under-images p {
+  font-size: 12px;
+  margin: 15px 0px 30px 0;
+}
+
+.presentation-city {
+  max-width: 50%;
+  margin-bottom: 45px;
+}
+
+.presentation-city p {
+  font-size: 20px;
+}
+
+/* LES CATEGORIES */
+
+.immanquables {
+  height: 300px;
+  display: flex;
+  margin: 10px 0px 50px 0;
+}
+
+.immanquables .category {
+  flex: 1;
+}
+
+.immanquables .category p {
+  margin: 0px 35px 10px 0;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.immanquables .category-photos::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.immanquables .category-photos {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.immanquables .category-photos {
+  display: flex;
+  flex: 3;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.immanquables .category-photos img {
+  height: 67%;
+  width: auto;
+  margin: 0 0 10px 0;
+}
+
+.category-photos .category-item {
+  margin: 10px;
+  position: relative;
+}
+.category-photos .category-item p {
+  font-size: 14px;
+}
+
+.svg-logo {
+  position: absolute;
+  top: 130px;
+  left: 5px;
+}
+
+.fav-icon-category-item {
+  position: absolute;
+  display: flex;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  height: 35px;
+  width: 35px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+}
