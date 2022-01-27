@@ -107,6 +107,10 @@ h1 span {
   cursor: pointer;
 }
 
+.secondary-nav .secondary-nav-item-responsive {
+  display: none;
+}
+
 .images img {
   max-width: 100%;
   max-height: 100%;
@@ -161,6 +165,37 @@ h1 span {
 .presentation-city p {
   font-size: 20px;
 }
+/* THIRD NAV BAR */
+
+.third-nav {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.third-nav p {
+  height: 20px;
+  padding: 11px 16px;
+  border: 1px solid black;
+  border-radius: 10px;
+  flex: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.third-nav p:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.third-nav-items-group {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
 
 /* LES CATEGORIES */
 
@@ -195,21 +230,25 @@ h1 span {
   overflow: hidden;
   overflow-x: scroll;
 }
-.immanquables .category-photos img {
+
+.immanquables .category-photos .category-item img {
   height: 67%;
-  width: auto;
+  width: 250px;
   margin: 0 0 10px 0;
 }
 
 .category-photos .category-item {
   margin: 10px;
   position: relative;
+  width: 250px;
 }
 .category-photos .category-item p {
   font-size: 14px;
 }
 
-.svg-logo {
+.svg-logo img {
+  max-width: 45px;
+  max-height: 45px;
   position: absolute;
   top: 130px;
   left: 5px;
@@ -226,4 +265,67 @@ h1 span {
   border-radius: 50px;
   justify-content: center;
   align-items: center;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1184px) {
+  .container {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+  .secondary-nav {
+    display: none;
+  }
+
+  .third-nav {
+    display: flex;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .secondary-nav {
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+
+  /* POUR MASQUER LA SCROLLBAR */
+  .secondary-nav::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  .third-nav {
+    display: none;
+  }
+
+  .secondary-nav .secondary-nav-item-responsive {
+    display: flex;
+  }
+
+  .secondary-nav p {
+    min-width: 150px;
+  }
+
+  .menu-item span {
+    display: none;
+    padding: 10px;
+  }
+
+  .images .right {
+    display: none;
+  }
 }
